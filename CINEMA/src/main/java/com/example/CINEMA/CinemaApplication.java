@@ -9,5 +9,4 @@ public class CinemaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CinemaApplication.class, args);
 	}
-//mongodb+srv://GOAT:s2DymOQ6P1Nj6Zov@cluster0.gewgg.mongodb.net/
 }
