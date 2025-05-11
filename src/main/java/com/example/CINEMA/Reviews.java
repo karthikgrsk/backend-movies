@@ -19,4 +19,7 @@ public class Reviews {
     public Reviews (String body) {
         this.body = body;
     }
+    public ObjectId getId(){
+        return id;
+    }
 }
