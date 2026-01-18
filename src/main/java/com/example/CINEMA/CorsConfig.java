@@ -13,7 +13,9 @@ public class CorsConfig{
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // or "/api/**" if you want to be strict
-                        .allowedOrigins("http://localhost:3000")
+                        .allowedOrigins("http://localhost:3000",
+                                        "https://cinematalks.netlify.app/home"
+                                       )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(false); // set to true only if sending cookies
