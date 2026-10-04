@@ -1,4 +1,5 @@
-package main.java.com.example.CINEMA;
+package com.example.CINEMA.config;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -14,7 +15,7 @@ public class CorsConfig{
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // or "/api/**" if you want to be strict
                         .allowedOrigins("http://localhost:3000",
-                                        "https://cinematalks.netlify.app/home"
+                        "https://frontend-movies-seven.vercel.app/"
                                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")

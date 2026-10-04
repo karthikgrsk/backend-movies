@@ -1,5 +1,7 @@
-package com.example.CINEMA;
+package com.example.CINEMA.service;
 
+import com.example.CINEMA.model.Movies;
+import com.example.CINEMA.repository.MoviesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +26,7 @@ public class MovieService {
         return moviesRepository.findMovieByImdbId(imdbId);
     }
 
-    public Optional<Movies> createMovie(Movies movies){
+    public Optional<Movies> createMovie(Movies movies) {
         moviesRepository.save(movies);
         return moviesRepository.findMovieByImdbId(movies.getImdbId());
     }
