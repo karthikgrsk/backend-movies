@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "13755000000021036",
+      "name": "movies-review-app",
+      "domain": {
+        "id": "50046552293",
+        "name": "movies-review-app-60045062675.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60045062675",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
